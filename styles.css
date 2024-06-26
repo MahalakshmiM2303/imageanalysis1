@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section, .palette-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-section {
+    border-right: 1px solid #ccc;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="file"] {
+    display: none;
+}
+
+form label {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #abb7eb;
+    
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+form label:hover {
+    background-color: #0056b3;
+}
+
+#canvas {
+    max-width: 100%;
+    max-height: 80%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+#btnLoad {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 2px rgb(103, 168, 72);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnLoad:hover {
+    background-color: #039d5a;
+}
+
+.palette-section h2 {
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+#palette, #complementary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+
+  
+  
+
+
+

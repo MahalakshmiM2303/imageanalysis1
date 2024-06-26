@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Extraction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <form action="#">
+                <input type="file" id="imgfile" />
+                <label for="imgfile">Choose File</label>
+                <input type="button" id="btnLoad" value="Load" onclick="main();" />
+            </form>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="palette-section">
+            <div id="palette"></div>
+            <h2>The color combinations are:</h2>
+            <div id="complementary"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
